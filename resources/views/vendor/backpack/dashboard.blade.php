@@ -78,7 +78,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @if($categories)
+                        @if(empty($categories))
                         @foreach($categories as $category)
                             <tr>
                                 <td>{{$category->name}}</td>
