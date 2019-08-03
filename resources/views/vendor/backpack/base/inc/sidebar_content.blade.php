@@ -1,7 +1,7 @@
 <!-- This file is used to store sidebar items, starting with Backpack\Base 0.9.0 -->
 <li><a href="{{ backpack_url('dashboard') }}"><i class="fa fa-dashboard"></i> <span>{{ trans('backpack::base.dashboard') }}</span></a></li>
 
-@role('Admin')
+@role('admin')
 <li><a href='{{ backpack_url("location") }}'><i class='fa fa-globe'></i> <span>Locations</span></a></li>
 
 <li><a href='{{ backpack_url("client") }}'><i class='fa fa-users'></i> <span>Customers</span></a></li>
