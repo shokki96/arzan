@@ -78,6 +78,7 @@
                         </tr>
                         </thead>
                         <tbody>
+                        @if($categories)
                         @foreach($categories as $category)
                             <tr>
                                 <td>{{$category->name}}</td>
@@ -87,6 +88,7 @@
                                 <td><a href="{{route('cat_stats',$category->id)}}">details</a> </td>
                             </tr>
                         @endforeach
+                            @endif
                         </tbody>
                     </table>
                 </div>
