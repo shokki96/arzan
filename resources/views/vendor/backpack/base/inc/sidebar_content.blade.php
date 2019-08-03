@@ -1,7 +1,7 @@
 <!-- This file is used to store sidebar items, starting with Backpack\Base 0.9.0 -->
 <li><a href="{{ backpack_url('dashboard') }}"><i class="fa fa-dashboard"></i> <span>{{ trans('backpack::base.dashboard') }}</span></a></li>
 
-@if(backpack_user()->hasPermissionTo('locations'))
+@if(auth()->user()->hasPermissionTo('locations'))
 <li><a href='{{ backpack_url("location") }}'><i class='fa fa-globe'></i> <span>Locations</span></a></li>
 @endif
 @if(backpack_user()->hasPermissionTo('customers'))
