@@ -24,8 +24,8 @@ class AbonentCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
         $this->crud->setModel('App\Models\Abonent');
-        $this->crud->setRoute(config('backpack.base.route_prefix') . '/client');
-        $this->crud->setEntityNameStrings('client', 'clients');
+        $this->crud->setRoute(config('backpack.base.route_prefix') . '/customer');
+        $this->crud->setEntityNameStrings('Customer', 'Customers');
 
         /*
         |--------------------------------------------------------------------------
