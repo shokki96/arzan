@@ -15,7 +15,11 @@ class OrderController extends Controller
             $lines = json_decode($request['lines'],true);
 
             $order = new Order();
-            $order->abonent_id = auth()->id();
+
+            if(!auth()->guest())
+                $order->abonent_id = auth()->id();
+
+            $order->phone = $request->get('phone');
             $order->total_price = 0;
             $order->save();
 

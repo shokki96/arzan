@@ -31,6 +31,6 @@ class CreateAbonentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('clients');
+        Schema::dropIfExists('abonents');
     }
 }

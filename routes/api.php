@@ -16,18 +16,18 @@ use Illuminate\Http\Request;
  Route::post('/signin', 'UserController@userLogin');
  Route::post('/signup', 'UserController@userRegister');
 
-Route::get('/location/{id?}', 'LocationController@index');
-Route::get('/category/{id?}', 'CategoryController@index');
+ Route::get('/location/{id?}', 'LocationController@index');
+ Route::get('/category/{id?}', 'CategoryController@index');
 
-Route::get('/product/list', 'ProductController@list');
-Route::get('/product/item/{id}', 'ProductController@item');
+ Route::get('/product/list', 'ProductController@list');
+ Route::get('/product/item/{id}', 'ProductController@item');
 
-Route::get('/contact', 'ProductController@contact');
-
+ Route::get('/contact', 'ProductController@contact');
+ Route::post('/make_order','OrderController@store');
  Route::group(['middleware' => 'auth:api'], function(){
 
      Route::get('/details', 'UserController@userDetails');
-     Route::post('/make_order','OrderController@store');
+
      
 //     Route::post('/estate/create', 'EstateController@store');
 //     Route::get('/estate/delete/{id}', 'EstateController@delete');
