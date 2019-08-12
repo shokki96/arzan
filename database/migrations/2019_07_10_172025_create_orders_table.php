@@ -14,7 +14,7 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('abonent_id')->nullable(true)->change();
+            $table->unsignedBigInteger('abonent_id')->nullable();
             $table->string('phone')->nullable();
             $table->foreign('abonent_id')->references('id')->on('abonents');
             $table->unsignedDecimal('total_price')->default(0);

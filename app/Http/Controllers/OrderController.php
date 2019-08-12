@@ -17,9 +17,12 @@ class OrderController extends Controller
             $order = new Order();
 
             if(!auth()->guest())
+            {
                 $order->abonent_id = auth()->id();
+                $order->phone = auth()->user()->phone;
+            }else
+                $order->phone = $request->get('phone');
 
-            $order->phone = $request->get('phone');
             $order->total_price = 0;
             $order->save();
 
