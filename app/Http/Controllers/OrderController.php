@@ -16,10 +16,10 @@ class OrderController extends Controller
 
             $order = new Order();
 
-            if(!auth()->guest())
+            if(!auth('api')->guest())
             {
-                $order->abonent_id = auth()->id();
-                $order->phone = auth()->user()->phone;
+                $order->abonent_id = auth('api')->id();
+                $order->phone = auth('api')->user()->phone;
             }else
                 $order->phone = $request->get('phone');
 
