@@ -5,7 +5,7 @@
 <li><a href='{{ backpack_url("location") }}'><i class='fa fa-globe'></i> <span>Locations</span></a></li>
 @endif
 @if(backpack_user()->can('customers'))
-<li><a href='{{ backpack_url("client") }}'><i class='fa fa-users'></i> <span>Customers</span></a></li>
+<li><a href='{{ backpack_url("customer") }}'><i class='fa fa-users'></i> <span>Customers</span></a></li>
 @endif
 @if(backpack_user()->can('categories'))
 <li><a href='{{ backpack_url("category") }}'><i class='fa fa-cubes'></i> <span>Categories</span></a></li>

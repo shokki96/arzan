@@ -14,7 +14,7 @@ Route::group([
     CRUD::resource('estate', 'EstateCrudController');
     CRUD::resource('estate_type', 'Estate_typeCrudController');
     CRUD::resource('location', 'LocationCrudController');
-    CRUD::resource('client', 'AbonentCrudController');
+    CRUD::resource('customer', 'AbonentCrudController');
     CRUD::resource('announcement', 'AnnouncementCrudController');
     CRUD::resource('category', 'CategoryCrudController');
     CRUD::resource('mark', 'MarkCrudController');
