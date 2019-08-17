@@ -12,11 +12,11 @@
         <tbody>
         @foreach($entry->lines as $line)
             <tr>
-                <td>{$line->product->title}</td>
-                <td>{$line->quantity}</td>
-                <td>{$line->total_cost}</td>
-                <td>{$line->size}</td>
-                <td>{$line->color}</td>
+                <td>{{$line->product->title}}</td>
+                <td>{{$line->quantity}}</td>
+                <td>{{$line->total_cost}}</td>
+                <td>{{$line->size}}</td>
+                <td>{{$line->color}}</td>
             </tr>
 
         @endforeach

@@ -33,13 +33,13 @@ class OrderCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
         $this->crud->addColumns([
-            ['name'=>'abonent_id','label'=>'Customer phone', 'type'=>'select', 'entity'=>'customer', 'attribute'=>'phone'],
+            ['name'=>'phone','label'=>'Customer phone', 'type'=>'text'],
             ['name'=>'total_price', 'label'=>'Total price', 'type'=>'number', 'decimals' => 2],
             ['name'=>'status','type'=>'text','label'=>'Order Status']
         ]);
 
         $this->crud->addFields([
-            ['name'=>'abonent_id','label'=>'Customer phone', 'type'=>'select', 'entity'=>'customer', 'attribute'=>'phone'],
+            ['name'=>'phone','label'=>'Customer phone', 'type'=>'text'],
             ['name'=>'total_price', 'label'=>'Total price', 'type'=>'number', 'decimals' => 2],
             ['name'=>'status','type'=>'enum','label'=>'Order Status'],
         ]);
