@@ -65,7 +65,7 @@ class Slider extends Model
         $this->uploader("img", $value);
     }
 
-    public function setBannerUrlAttribute($value)
+    public function setImgAttribute($value)
     {
         $attribute_name = "img";
         $disk = 'uploads'; // or use your own disk, defined in config/filesystems.php

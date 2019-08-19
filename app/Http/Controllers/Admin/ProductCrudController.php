@@ -61,7 +61,7 @@ class ProductCrudController extends CrudController
             ['name'=>'description','type'=>'text','label'=>'Description'],
 
             ['name'=>'images','type'=>'upload_multiple','label'=>'Images',
-            'upload' => true,'uploads'=>true],
+            'upload' => true, 'disk' => 'uploads'],
 
             ['name'=>'phone','label'=>'Phone','type' => 'number'],
             ['name'=>'price','label'=>'Price','type' => 'number'],
