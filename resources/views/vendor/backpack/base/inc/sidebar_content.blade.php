@@ -27,5 +27,9 @@
 @endif
 
 @if(backpack_user()->can('orders'))
-<li><a href='{{ backpack_url('order') }}'><i class='fa fa-tag'></i> <span>Orders</span></a></li>
+<li><a href='{{ backpack_url("order") }}'><i class='fa fa-tag'></i> <span>Orders</span></a></li>
+@endif
+
+@if(backpack_user()->can('sliders'))
+<li><a href='{{ backpack_url("slider") }}'><i class='fa fa-image'></i> <span>Sliders</span></a></li>
 @endif

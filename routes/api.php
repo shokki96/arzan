@@ -24,9 +24,11 @@ use Illuminate\Http\Request;
 
  Route::get('/contact', 'ProductController@contact');
  Route::post('/make_order','OrderController@store');
+ Route::get('/slider','SliderController@list');
+
  Route::group(['middleware' => 'auth:api'], function(){
 
-     Route::get('/details', 'UserController@userDetails');
+Route::get('/details', 'UserController@userDetails');
 
      
 //     Route::post('/estate/create', 'EstateController@store');

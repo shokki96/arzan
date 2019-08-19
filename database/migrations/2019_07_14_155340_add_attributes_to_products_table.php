@@ -20,8 +20,8 @@ class AddAttributesToProductsTable extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->json('colors')->nullable();
-            $table->json('size')->nullable();
+            $table->text('colors')->nullable();
+            $table->text('size')->nullable();
             $table->unsignedSmallInteger('quantity')->default(1);
             $table->boolean('stock')->default(0);
         });
