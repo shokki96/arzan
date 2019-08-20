@@ -40,7 +40,7 @@ class AdminController extends Controller
 //        }
 
         $this->data['orders'] = $order->count();
-        $this->data['users'] = $users->group_by('id')->count();
+        $this->data['users'] = $users->count();
 //        $this->data['categories'] = Category::withCount(['orders'])->get();
         $this->data['categories'] = Category::has('orders')->withCount([
             'orders',
@@ -48,7 +48,7 @@ class AdminController extends Controller
                 $query->select(DB::raw('SUM(order_lines.total_cost)'));
             }
         ])->get();
-        //dd($this->data['categories']);
+        dd($this->data);
         return view('backpack::dashboard', $this->data);
     }
 }

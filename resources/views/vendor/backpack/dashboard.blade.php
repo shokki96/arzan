@@ -119,7 +119,7 @@
                 <div class="small-box bg-yellow">
                     <div class="inner">
                         <h3>
-                            {{$users??0}}
+                            {{$users ?? 0}}
                         </h3>
 
                         <p>User Registrations</p>
