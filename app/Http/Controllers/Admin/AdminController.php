@@ -48,9 +48,11 @@ class AdminController extends Controller
 
             }
         ]);
+
         if($start_date && $end_date){
-            $query->whereBetween('orders.created_at',[date($start_date),date($end_date)]);
+            $query->havingBetween('orders.created_at',[date($start_date),date($end_date)]);
         }
+
         $this->data['categories'] = $query->get();
         //dd($this->data['categories']);
         return view('backpack::dashboard', $this->data);
