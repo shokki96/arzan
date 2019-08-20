@@ -41,15 +41,17 @@ class AdminController extends Controller
         $this->data['orders'] = $order->count();
         $this->data['users'] = $users->count();
 //        $this->data['categories'] = Category::withCount(['orders'])->get();
-        $this->data['categories'] = Category::has('orders')->withCount([
+        $query = Category::has('orders')->withCount([
             'orders',
-            'orders as total' => function($query) use ($end_date, $start_date) {
+            'orders as total' => function($query){
                 $query->select(DB::raw('SUM(order_lines.total_cost)'));
-                if($start_date && $end_date){
-                    $query->whereBetween('order_lines.created_at',[date($start_date),date($end_date)]);
-                }
+
             }
-        ])->get();
+        ]);
+        if($start_date && $end_date){
+            $query->whereBetween('orders.created_at',[date($start_date),date($end_date)]);
+        }
+        $this->data['categories'] = $query->get();
         //dd($this->data['categories']);
         return view('backpack::dashboard', $this->data);
     }
