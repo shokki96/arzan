@@ -23,4 +23,5 @@ Route::group([
     CRUD::resource('contact', 'ContactCrudController');
     CRUD::resource('order', 'OrderCrudController');
     CRUD::resource('slider', 'SliderCrudController');
+    Route::get('/dashboard', 'AdminController@dashboard')->name('admin_dashboard');
 }); // this should be the absolute last line of this file
