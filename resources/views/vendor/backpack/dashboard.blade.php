@@ -85,7 +85,7 @@
                                 <td>{{$category->orders_count}}</td>
                                 <td>{{$category->total}}</td>
 
-                                <td><a href="{{route('cat_stats',$category->id)}}">details</a> </td>
+                                {{--<td><a href="{{route('cat_stats',$category->id)}}">details</a> </td>--}}
                             </tr>
                         @endforeach
                             @endif
