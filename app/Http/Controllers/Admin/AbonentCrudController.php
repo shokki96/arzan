@@ -41,7 +41,7 @@ class AbonentCrudController extends CrudController
             'label'=>'Telefon',
         ]);
 
-        $this->crud->field([
+        $this->crud->addField([
             'name'=>'phone',
             'type'=>'text',
             'label'=>'Telefon',
