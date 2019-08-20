@@ -43,15 +43,15 @@ class AdminController extends Controller
 //        $this->data['categories'] = Category::withCount(['orders'])->get();
         $query = Category::has('orders')->withCount([
             'orders',
-            'orders as total' => function($query){
+            'orders as total' => function($query) use ($end_date, $start_date) {
                 $query->select(DB::raw('SUM(order_lines.total_cost)'));
-
+                if($start_date && $end_date){
+                    $query->havingBetween('order_lines.created_at',[date($start_date),date($end_date)]);
+                }
             }
         ]);
 
-        if($start_date && $end_date){
-            $query->havingBetween('order_lines.created_at',[date($start_date),date($end_date)]);
-        }
+
 
         $this->data['categories'] = $query->get();
         //dd($this->data['categories']);
