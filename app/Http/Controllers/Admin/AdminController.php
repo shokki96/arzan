@@ -39,7 +39,7 @@ class AdminController extends Controller
 //            $users->whereBetween('created_at',[date($start_date),date($end_date)]);
 //        }
 
-        $this->data['orders'] = $order->count();
+        $this->data['orders'] = $order->get();
         $this->data['users'] = $users->count();
 //        $this->data['categories'] = Category::withCount(['orders'])->get();
         $this->data['categories'] = Category::has('orders')->withCount([
@@ -48,7 +48,8 @@ class AdminController extends Controller
                 $query->select(DB::raw('SUM(order_lines.total_cost)'));
             }
         ])->get();
-        dd($this->data);
+
+        dd($order);
         return view('backpack::dashboard', $this->data);
     }
 }
