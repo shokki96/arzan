@@ -69,7 +69,7 @@
                     <table class="table table-bordered">
                         <thead>
                         <tr>
-                            <th>Name</th>
+                            <th>Category</th>
                             <th>Orders count</th>
                             <th>Total sold</th>
                             {{--<th>Views count</th>--}}
@@ -81,7 +81,7 @@
                         @if(!empty($categories))
                         @foreach($categories as $category)
                             <tr>
-                                <td>{{$category->name}}</td>
+                                <td>{{$category->name_tm}}</td>
                                 <td>{{$category->orders_count}}</td>
                                 <td>{{$category->total}}</td>
 
