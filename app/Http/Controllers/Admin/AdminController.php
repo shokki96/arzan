@@ -46,7 +46,7 @@ class AdminController extends Controller
             'orders as total' => function($query) use ($end_date, $start_date) {
                 $query->select(DB::raw('SUM(order_lines.total_cost)'));
                 if($start_date && $end_date){
-                    $query->whereBetween('created_at',[date($start_date),date($end_date)]);
+                    $query->whereBetween('orders.created_at',[date($start_date),date($end_date)]);
                 }
             }
         ])->get();
