@@ -101,7 +101,7 @@
                 <div class="small-box bg-aqua">
                     <div class="inner">
                         <h3>
-                            {{$orders??0}}
+                            {{$orders??'N/A'}}
                         </h3>
 
                         <p>Orders</p>
@@ -119,7 +119,7 @@
                 <div class="small-box bg-yellow">
                     <div class="inner">
                         <h3>
-                            {{$users ?? 0}}
+                            {{$users ?? 'N/A'}}
                         </h3>
 
                         <p>User Registrations</p>
