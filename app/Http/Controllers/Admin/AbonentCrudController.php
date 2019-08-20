@@ -34,8 +34,18 @@ class AbonentCrudController extends CrudController
         */
 
         // TODO: remove setFromDb() and manually define Fields and Columns
-        $this->crud->setFromDb();
+        //$this->crud->setFromDb();
+        $this->crud->addColumn([
+            'name'=>'phone',
+            'type'=>'text',
+            'label'=>'Telefon',
+        ]);
 
+        $this->crud->field([
+            'name'=>'phone',
+            'type'=>'text',
+            'label'=>'Telefon',
+        ]);
         // add asterisk for fields that are required in ClientRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
         $this->crud->setRequiredFields(UpdateRequest::class, 'edit');

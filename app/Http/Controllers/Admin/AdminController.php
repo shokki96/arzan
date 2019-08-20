@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\Abonent;
 use App\Models\Category;
 use App\Models\Order;
 use App\User;
@@ -30,13 +31,13 @@ class AdminController extends Controller
         $start_date = request('start_date');
         $end_date = request('end_date');
         $order = Order::select('id');//count with sum
-        $users = User::select('id');
-        if($start_date && $end_date)
-        {
-            //$filter_by_date = " and (orders.created_at BETWEEN {$start_date} and {$end_date})";
-            $order->whereBetween('created_at',[date($start_date),date($end_date)]);
-            $users->whereBetween('created_at',[date($start_date),date($end_date)]);
-        }
+        $users = Abonent::select('id');
+//        if($start_date && $end_date)
+//        {
+//            //$filter_by_date = " and (orders.created_at BETWEEN {$start_date} and {$end_date})";
+//            $order->whereBetween('created_at',[date($start_date),date($end_date)]);
+//            $users->whereBetween('created_at',[date($start_date),date($end_date)]);
+//        }
 
         $this->data['orders'] = $order->count();
         $this->data['users'] = $users->count();
