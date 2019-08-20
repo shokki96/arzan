@@ -40,7 +40,7 @@ class AdminController extends Controller
 //        }
 
         $this->data['orders'] = $order->count();
-        $this->data['users'] = $users->count();
+        $this->data['users'] = $users->group_by('id')->count();
 //        $this->data['categories'] = Category::withCount(['orders'])->get();
         $this->data['categories'] = Category::has('orders')->withCount([
             'orders',
