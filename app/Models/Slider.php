@@ -90,7 +90,7 @@ class Slider extends Model
             // but first, remove "public/" from the path, since we're pointing to it from the root folder
             // that way, what gets saved in the database is the user-accesible URL
             $public_destination_path = Str::replaceFirst('public/', '', $destination_path);
-            $this->attributes[$attribute_name] = $public_destination_path.'/'.$filename;
+            $this->attributes[$attribute_name] = asset('uploads/'.$public_destination_path.'/'.$filename);
         }
     }
 }
