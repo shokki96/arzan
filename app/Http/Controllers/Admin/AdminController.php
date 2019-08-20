@@ -50,7 +50,7 @@ class AdminController extends Controller
         ]);
 
         if($start_date && $end_date){
-            $query->havingBetween('orders.created_at',[date($start_date),date($end_date)]);
+            $query->havingBetween('order_lines.created_at',[date($start_date),date($end_date)]);
         }
 
         $this->data['categories'] = $query->get();
