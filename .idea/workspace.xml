@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+            <state relative-caret-position="447">
+              <caret line="48" column="53" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
               <folding>
                 <element signature="e#46#70#0#PHP" expanded="true" />
               </folding>
@@ -375,7 +375,7 @@
       <workItem from="1566075500607" duration="955000" />
       <workItem from="1566193562489" duration="61000" />
       <workItem from="1566226526308" duration="3560000" />
-      <workItem from="1566287876916" duration="2335000" />
+      <workItem from="1566287876916" duration="2489000" />
     </task>
     <task id="LOCAL-00001" summary="first comm">
       <created>1562778571298</created>
@@ -636,11 +636,25 @@
       <option name="project" value="LOCAL" />
       <updated>1566289887934</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="statistikst test fx cat name tab date">
+      <created>1566290231607</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1566290231607</updated>
+    </task>
+    <task id="LOCAL-00039" summary="statistikst test fx cat name tab date oters">
+      <created>1566290301819</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1566290301819</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48466000" />
+    <option name="totallyTimeSpent" value="48620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
@@ -672,8 +686,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="permissionssss23" />
-    <MESSAGE value="permissionssss234" />
     <MESSAGE value="permissionssss2345" />
     <MESSAGE value="permissionssss23456" />
     <MESSAGE value="permissionssss234567" />
@@ -697,7 +709,9 @@
     <MESSAGE value="statistikst test fx5" />
     <MESSAGE value="statistikst test fx cat stats" />
     <MESSAGE value="statistikst test fx cat name tab" />
-    <option name="LAST_COMMIT_MESSAGE" value="statistikst test fx cat name tab" />
+    <MESSAGE value="statistikst test fx cat name tab date" />
+    <MESSAGE value="statistikst test fx cat name tab date oters" />
+    <option name="LAST_COMMIT_MESSAGE" value="statistikst test fx cat name tab date oters" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EstateController.php">
@@ -976,8 +990,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="49" column="17" lean-forward="true" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+        <state relative-caret-position="447">
+          <caret line="48" column="53" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
           <folding>
             <element signature="e#46#70#0#PHP" expanded="true" />
           </folding>
