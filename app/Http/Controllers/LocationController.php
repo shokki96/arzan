@@ -13,7 +13,7 @@ class LocationController extends Controller
         else
             $locations = Location::where('depth',1);
 
-        return $locations->select(['id','name_tm','name_ru'])
+        return $locations->select(['id','name_tm','name_ru', 'name_en'])
             ->orderBy('lft')
             ->get();
     }

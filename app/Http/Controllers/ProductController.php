@@ -20,7 +20,7 @@ class ProductController extends Controller
         $filters = \request()->only(['categoryP','categoryC','locationP']);
         $query = Product::with('location:id,name_tm,name_ru')
             ->with('subCategory:id,name_tm,name_ru')
-            ->select(['id','title','images','price','locationP','categoryC','created_at','colors', 'size', 'quantity']);
+            ->select(['id','title','title_ru','title_en','images','price','locationP','categoryC','created_at','colors', 'size', 'quantity']);
 
         foreach ($filters as $key => $filter){
             $query->where($key,$filter);
@@ -34,8 +34,8 @@ class ProductController extends Controller
 
     public function item($id){
         return Product::with([
-            'location:id,name_tm,name_ru',
-            'subCategory:id,name_tm,name_ru',
+            'location:id,name_tm,name_ru,name_en',
+            'subCategory:id,name_tm,name_ru,name_en',
         ])->find($id);
     }
 

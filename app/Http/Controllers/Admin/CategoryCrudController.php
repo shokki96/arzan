@@ -36,12 +36,14 @@ class CategoryCrudController extends CrudController
         $this->crud->addColumns([
             ['name'=>'name_tm','type'=>'text','label'=>'Name Tm'],
             ['name'=>'name_ru','type'=>'text','label'=>'Name Ru'],
+            ['name'=>'name_en','type'=>'text','label'=>'Name En'],
            
             // options: fontawesome, glyphicon, ionicon, weathericon, mapicon, octicon, typicon, elusiveicon, materialdesign],
         ]);
         $this->crud->addFields([
             ['name'=>'name_tm','type'=>'text','label'=>'Name Tm'],
             ['name'=>'name_ru','type'=>'text','label'=>'Name Ru'],
+            ['name'=>'name_en','type'=>'text','label'=>'Name En'],
             [ // image
 
                 'label' => "Material Image",

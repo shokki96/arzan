@@ -57,8 +57,13 @@ class ProductCrudController extends CrudController
         ]);
         $this->crud->addFields([
             ['name'=>'title','type'=>'text','label'=>'Title'],
+            ['name'=>'title_ru','type'=>'text','label'=>'Title Ru'],
+            ['name'=>'title_en','type'=>'text','label'=>'Title En'],
+
             ['name'=>'quantity','type'=>'number','label'=>'Quantity'],
             ['name'=>'description','type'=>'text','label'=>'Description'],
+            ['name'=>'description_ru','type'=>'text','label'=>'Description Ru'],
+            ['name'=>'description_en','type'=>'text','label'=>'Description En'],
 
             ['name'=>'images','type'=>'upload_multiple','label'=>'Images',
             'upload' => true, 'disk' => 'uploads'],

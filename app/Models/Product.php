@@ -21,7 +21,11 @@ class Product extends Model
     // protected $guarded = ['id'];
     protected $fillable = [
         'title',
+        'title_ru',
+        'title_en',
         'description',
+        'description_ru',
+        'description_en',
         'images',
         'price',
         'locationP',//'locationC',

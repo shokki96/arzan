@@ -19,7 +19,7 @@ class Location extends Model
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     // protected $guarded = ['id'];
-    protected $fillable = ['name_tm','name_ru'];
+    protected $fillable = ['name_tm','name_ru', 'name_en'];
     // protected $hidden = [];
     // protected $dates = [];
 

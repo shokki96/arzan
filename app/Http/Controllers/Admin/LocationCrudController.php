@@ -38,10 +38,12 @@ class LocationCrudController extends CrudController
         $this->crud->addColumns([
             ['name'=>'name_tm','type'=>'text','label'=>'Name Tm'],
             ['name'=>'name_ru','type'=>'text','label'=>'Name Ru'],
+            ['name'=>'name_en','type'=>'text','label'=>'Name En'],
         ]);
         $this->crud->addFields([
             ['name'=>'name_tm','type'=>'text','label'=>'Name Tm'],
             ['name'=>'name_ru','type'=>'text','label'=>'Name Ru'],
+            ['name'=>'name_en','type'=>'text','label'=>'Name En'],
         ]);
         $this->crud->allowAccess('reorder');
         $this->crud->enableReorder('name_tm', 1);

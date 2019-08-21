@@ -13,7 +13,7 @@ class CategoryController extends Controller
         else
             $locations = Category::where('depth',1);
 
-        return $locations->select(['id','name_tm','name_ru','icon'])
+        return $locations->select(['id','name_tm','name_ru','name_en','icon'])
             ->orderBy('lft')
             ->get();
     }
