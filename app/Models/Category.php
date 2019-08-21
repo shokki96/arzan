@@ -83,21 +83,24 @@ class Category extends Model
     | ACCESORS
     |--------------------------------------------------------------------------
     */
- public function setBannerUrlAttribute($value)
+    public function setIconUrlAttribute($value)
+    {
+        $this->uploader("icon", $value);
+    }
+
+
+    public function setIconAttribute($value)
     {
         $attribute_name = "icon";
         $disk = 'uploads'; // or use your own disk, defined in config/filesystems.php
         $destination_path = "images"; // path relative to the disk above
-
         // if the image was erased
         if ($value==null) {
             // delete the image from disk
             \Storage::disk($disk)->delete($this->{$attribute_name});
-
             // set null in the database column
             $this->attributes[$attribute_name] = null;
         }
-
         // if a base64 was sent, store it in the db
         if (starts_with($value, 'data:image'))
         {
