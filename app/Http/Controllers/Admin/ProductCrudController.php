@@ -23,9 +23,12 @@ class ProductCrudController extends CrudController
         | CrudPanel Basic Information
         |--------------------------------------------------------------------------
         */
+        
         $this->crud->setModel('App\Models\Product');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/product');
         $this->crud->setEntityNameStrings('product', 'products');
+        $this->crud->enableExportButtons();
+        
 
         /*
         |--------------------------------------------------------------------------
@@ -35,7 +38,7 @@ class ProductCrudController extends CrudController
 
         // TODO: remove setFromDb() and manually define Fields and Columns
         //$this->crud->setFromDb();\
-
+        
          $this->crud->addColumns([
             ['name'=>'title','type'=>'text','label'=>'Title'],
             ['name'=>'description','type'=>'text','label'=>'Description'],
