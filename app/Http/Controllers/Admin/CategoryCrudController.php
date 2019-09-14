@@ -34,16 +34,16 @@ class CategoryCrudController extends CrudController
         */
 
         $this->crud->addColumns([
-            ['name'=>'name_tm','type'=>'text','label'=>'Name Tm'],
-            ['name'=>'name_ru','type'=>'text','label'=>'Name Ru'],
-            ['name'=>'name_en','type'=>'text','label'=>'Name En'],
+            ['name'=>'name_tm','type'=>'text','label'=>'Tm ady'],
+            ['name'=>'name_ru','type'=>'text','label'=>'Ru ady'],
+            ['name'=>'name_en','type'=>'text','label'=>'En ady'],
             ['name'=>'icon','type'=>'text','label'=>'Icon'],
             // options: fontawesome, glyphicon, ionicon, weathericon, mapicon, octicon, typicon, elusiveicon, materialdesign],
         ]);
         $this->crud->addFields([
-            ['name'=>'name_tm','type'=>'text','label'=>'Name Tm'],
-            ['name'=>'name_ru','type'=>'text','label'=>'Name Ru'],
-            ['name'=>'name_en','type'=>'text','label'=>'Name En'],
+            ['name'=>'name_tm','type'=>'text','label'=>'Tm ady'],
+            ['name'=>'name_ru','type'=>'text','label'=>'Ru ady'],
+            ['name'=>'name_en','type'=>'text','label'=>'En ady'],
             [ // image
 
                 'label' => "Material Image",
