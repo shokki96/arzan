@@ -58,7 +58,7 @@
                     <div class="intro_text">
                         <h4>Amatly we Ýokary Hilli Harytlar</h4>
                         <h1 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">ARZAN  PROGRAMMASYNDA</h1>
-                        <p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">ARZAN programmasy Android we Ios telefonlary üçin niýetlendir.Bu programma arkaly programmadaky harytlarymyzy online görnüşde sargyt edip bilersiňiz.</p>
+                        <p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">ARZAN programmasy Android we IOS telefonlary üçin niýetlendir.Bu programma arkaly programmadaky harytlarymyzy online görnüşde sargyt edip bilersiňiz.</p>
                         <div class="download_app_icon d-flex  wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
                             <a href="https://apps.apple.com/us/app/arzan/id1477392853?l=ru&ls=1" target="_blank" class=""><img src="{{asset('assets/images/app_store.png')}}" alt=""></a>                 
                             <a href="https://play.google.com/store/apps/details?id=com.akami.arzan" target="_blank" class=""><img src="{{asset('assets/images/play_store.png')}}" alt=""></a>

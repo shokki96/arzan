@@ -59,35 +59,35 @@ class ProductCrudController extends CrudController
 
         ]);
         $this->crud->addFields([
-            ['name'=>'title','type'=>'text','label'=>'Ady'],
-            ['name'=>'title_ru','type'=>'text','label'=>'Ru Ady'],
-            ['name'=>'title_en','type'=>'text','label'=>'En Ady'],
+            ['name'=>'title','type'=>'text','label'=>'Ady', 'tab' => 'Hokman Doldurulmaly'],
+            ['name'=>'title_ru','type'=>'text','label'=>'Ru Ady', 'tab' => 'Rus Dili'],
+            ['name'=>'title_en','type'=>'text','label'=>'En Ady', 'tab' => 'Inlis Dili'],
 
-            ['name'=>'quantity','type'=>'number','label'=>'Sany'],
-            ['name'=>'description','type'=>'text','label'=>'Düşüdirilişi'],
-            ['name'=>'description_ru','type'=>'text','label'=>'Ru Düşüdirilişi'],
-            ['name'=>'description_en','type'=>'text','label'=>'En Düşüdirilişi'],
+            ['name'=>'quantity','type'=>'number','label'=>'Sany', 'tab' => 'Hokman Doldurulmaly'],
+            ['name'=>'description','type'=>'text','label'=>'Düşüdirilişi', 'tab' => 'Hokman Doldurulmaly'],
+            ['name'=>'description_ru','type'=>'text','label'=>'Ru Düşüdirilişi', 'tab' => 'Rus Dili'],
+            ['name'=>'description_en','type'=>'text','label'=>'En Düşüdirilişi', 'tab' => 'Inlis Dili'],
 
             ['name'=>'images','type'=>'upload_multiple','label'=>'Suratlar',
-            'upload' => true, 'disk' => 'uploads'],
+            'upload' => true, 'disk' => 'uploads', 'tab' => 'Hokman Doldurulmaly'],
 
-            ['name'=>'phone','label'=>'Telefon','type' => 'number'],
-            ['name'=>'price','label'=>'Bahasy','type' => 'number'],
+            ['name'=>'phone','label'=>'Telefon','type' => 'number', 'tab' => 'Beylekiler'],
+            ['name'=>'price','label'=>'Bahasy','type' => 'number', 'tab' => 'Hokman Doldurulmaly'],
             ['name'=>'categoryP','attribute'=>'name_tm','type'=>'select','label'=>'Esasy Kategoriýa ',
                 'entity'=>'category', 'model'=>'App\Models\Category',
                 'options'=>(function ($query) {
                     return $query->orderBy('name_tm', 'ASC')->where('depth', 1)->get();
-                }),
+                }), 'tab' => 'Hokman Doldurulmaly'
             ],
-            ['name'=>'categoryC','attribute'=>'name_tm','type'=>'select2_nested','label'=>'Kiçi Kategoriýa', 'entity'=>'subCategory', 'model'=>'App\Models\Category'],
+            ['name'=>'categoryC','attribute'=>'name_tm','type'=>'select2_nested','label'=>'Kiçi Kategoriýa', 'entity'=>'subCategory', 'model'=>'App\Models\Category', 'tab' => 'Hokman Doldurulmaly'],
             ['name'=>'locationP','attribute'=>'name_tm','type'=>'select','label'=>'Ýeri',
                 'entity'=>'location', 'model'=>'App\Models\Location',
                 'options'=>(function ($query) {
                     return $query->orderBy('name_tm', 'ASC')->where('depth', 1)->get();
-                })
+                }), 'tab' => 'Hokman Doldurulmaly'
             ],
-            ['name'=>"colors", 'type'=>'table','entity_singular' => 'option', 'label'=>'Reňkler','columns'=>['name'=>'Name','code'=>'Code']],
-            ['name'=>"size", 'type'=>'table', 'entity_singular' => 'option','label'=>'Razmerler','columns'=>['size'=>'Size']]
+            ['name'=>"colors", 'type'=>'table','entity_singular' => 'option', 'label'=>'Reňkler','columns'=>['name'=>'Name','code'=>'Code'], 'tab' => 'Beylekiler'],
+            ['name'=>"size", 'type'=>'table', 'entity_singular' => 'option','label'=>'Razmerler','columns'=>['size'=>'Size'], 'tab' => 'Beylekiler']
              ]);
 
         // add asterisk for fields that are required in ProductRequest

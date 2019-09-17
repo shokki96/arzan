@@ -31,5 +31,9 @@
 @endif
 
 @if(backpack_user()->can('sliders'))
-<li><a href='{{ backpack_url("slider") }}'><i class='fa fa-image'></i> <span>Sliderler</span></a></li>
+<li><a href='{{ backpack_url("slider") }}'><i class='fa fa-image'></i> <span>Slaýderler</span></a></li>
+@endif
+
+@if(backpack_user()->can('deliverman'))
+<li><a href='{{ backpack_url("delivermen") }}'><i class='fa fa-car'></i> <span>Dostawşiklar</span></a></li>
 @endif
