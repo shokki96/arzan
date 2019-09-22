@@ -65,11 +65,11 @@ class ProductCrudController extends CrudController
 
             ['name'=>'quantity','type'=>'number','label'=>'Sany', 'tab' => 'Hokman Doldurulmaly'],
             ['name'=>'description','type'=>'text','label'=>'Düşüdirilişi', 'tab' => 'Hokman Doldurulmaly'],
-            ['name'=>'quantity_attribute','type'=>'text','label'=>'Ölçeg birligi Tm', 'tab' => 'Hokman Doldurulmaly'],
+            ['name'=>'quantity_attribute','type'=>'text','label'=>'Ölçeg birligi Tm', 'default' => 'Sany', 'tab' => 'Hokman Doldurulmaly'],
             ['name'=>'description_ru','type'=>'text','label'=>'Ru Düşüdirilişi', 'tab' => 'Rus Dili'],
-            ['name'=>'quantity_attribute_ru','type'=>'text','label'=>'Ölçeg birligi Ru', 'tab' => 'Rus Dili'],
+            ['name'=>'quantity_attribute_ru','type'=>'text','label'=>'Ölçeg birligi Ru',  'default' => 'штук', 'tab' => 'Rus Dili'],
             ['name'=>'description_en','type'=>'text','label'=>'En Düşüdirilişi', 'tab' => 'Inlis Dili'],
-            ['name'=>'quantity_attribute_en','type'=>'text','label'=>'Ölçeg birligi En', 'tab' => 'Inlis Dili'],
+            ['name'=>'quantity_attribute_en','type'=>'text','label'=>'Ölçeg birligi En', 'default' => 'Piece', 'tab' => 'Inlis Dili'],
 
             ['name'=>'images','type'=>'upload_multiple','label'=>'Suratlar',
             'upload' => true, 'disk' => 'uploads', 'tab' => 'Hokman Doldurulmaly'],
