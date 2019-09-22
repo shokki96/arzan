@@ -20,7 +20,7 @@ class Order extends Model
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     // protected $guarded = ['id'];
-    protected $fillable = ['status','abonent_id','total_price'];
+    protected $fillable = ['status','abonent_id','total_price', 'delivermen'];
     // protected $hidden = [];
     // protected $dates = [];
 
@@ -40,6 +40,9 @@ class Order extends Model
     }
     public function lines(){
         return $this->hasMany(Order_line::class);
+    }
+    public function delivermen(){
+        return $this->belongsTo(Delivermen::class,'delivermen');
     }
     /*
     |--------------------------------------------------------------------------

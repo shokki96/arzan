@@ -30,7 +30,10 @@ class ProductRequest extends FormRequest
             'description' => 'required',
             'categoryP' => 'required',
             'categoryC' => 'required',
-            'locationP' => 'required'
+            'locationP' => 'required',
+            'quantity_attribute_en' => 'required',
+            'quantity_attribute_ru' => 'required',
+            'quantity_attribute' => 'required'
 
         ];
     }

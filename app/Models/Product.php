@@ -34,7 +34,10 @@ class Product extends Model
         'categoryC',
         'colors',
         'size',
-        'quantity'
+        'quantity',
+        'quantity_attribute_en',
+        'quantity_attribute_ru',
+        'quantity_attribute'
     ];
     // protected $hidden = [];
     // protected $dates = [];

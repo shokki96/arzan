@@ -42,6 +42,15 @@ class OrderCrudController extends CrudController
             ['name'=>'phone','label'=>'Customer phone', 'type'=>'text'],
             ['name'=>'total_price', 'label'=>'Total price', 'type'=>'number', 'decimals' => 2],
             ['name'=>'status','type'=>'enum','label'=>'Order Status'],
+            [  // Select
+                'label' => "Dostawshik",
+                'type' => 'select',
+                'name' => 'delivermen', // the db column for the foreign key
+                'entity' => 'delivermen', // the method that defines the relationship in your Model
+                'attribute' => 'name', // foreign key attribute that is shown to user
+                'model' => "App\Models\Delivermen",
+             
+             ]
         ]);
         // TODO: remove setFromDb() and manually define Fields and Columns
         //$this->crud->setFromDb();

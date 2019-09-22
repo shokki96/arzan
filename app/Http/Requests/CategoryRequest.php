@@ -27,7 +27,8 @@ class CategoryRequest extends FormRequest
     {
         return [
              'name_tm' => 'required|min:2|max:255',
-             'name_ru' => 'required|min:2|max:255'
+             'name_ru' => 'required|min:2|max:255',
+             'name_en' => 'required|min:2|max:255',
         ];
     }
 

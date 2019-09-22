@@ -28,7 +28,9 @@ class Delivermen extends Model
     | FUNCTIONS
     |--------------------------------------------------------------------------
     */
-
+    public function orders(){
+        return $this->hasMany(Order::class);
+    }
     /*
     |--------------------------------------------------------------------------
     | RELATIONS
