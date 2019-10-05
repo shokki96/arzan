@@ -2,6 +2,7 @@
     <table class="table table-bordered">
         <thead>
         <tr>
+            <th>Images</th>
             <th>Product</th>
             <th>Quantity</th>
             <th>Total</th>
@@ -12,6 +13,7 @@
         <tbody>
         @foreach($entry->lines as $line)
             <tr>
+                <td><img src="{{asset('uploads/'.$line->product->images[0])}}" class="img-thumbnail img-lg"></td>
                 <td>{{$line->product->title}}</td>
                 <td>{{$line->quantity}}</td>
                 <td>{{$line->total_cost}}</td>

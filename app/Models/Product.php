@@ -109,6 +109,7 @@ public static function boot()
         $request = \Request::instance();
         $attribute_value = (array) $this->{$attribute_name};
         $files_to_clear = $request->get('clear_'.$attribute_name);
+        //dd($attribute_value);
         // if a file has been marked for removal,
         // delete it from the disk and from the db
         if ($files_to_clear) {
@@ -125,7 +126,7 @@ public static function boot()
             foreach ($request->file($attribute_name) as $file) {
                 if ($file->isValid()) {
                     // 1. Generate a new file name
-                    $new_file_name = $file->getClientOriginalName();
+                    $new_file_name =  md5($file.time()).'.jpg';
                     // 2. Move the new file to the correct path
                     $file_path = $file->storeAs($destination_path, $new_file_name, $disk);
                     // 3. Add the public path to the database

@@ -42,10 +42,9 @@ class ProductCrudController extends CrudController
          $this->crud->addColumns([
             ['name'=>'title','type'=>'text','label'=>'Ady'],
             ['name'=>'description','type'=>'text','label'=>'Düşüdiriliş'],
-            ['name'=>'phone','label'=>'Telefon','type' => 'number'],
+            ['name'=>'phone','label'=>'Telefon','type' => 'text'],
             ['name'=>'price','label'=>'Baha','type' => 'number'],
-            ['name'=>'images','type'=>'text','label'=>'Images'],
-            ['name'=>'created_at','type'=>'date_time','label'=>'Date'],
+            ['name'=>'quantity','type'=>'text','label'=>'Sany'],
             ['label'=>'Esasy kategoriýa', 'type'=>'select', 'name'=>'categoryP', 'entity'=>'category',
                 'model'=>'App\Models\Category','attribute' => 'name_tm', 'searchLogic' => false],
             ['name'=>'categoryC','type'=>'select','label'=>'Kiçi kategoriýa', 'entity'=>'subCategory',
@@ -53,7 +52,7 @@ class ProductCrudController extends CrudController
             ['name'=>'locationP','type'=>'select','label'=>'Ýeri', 'entity'=>'location',
                 'model'=>'App\Models\Location','attribute' => 'name_tm', 'searchLogic' => false],
 
-                ['name'=>'quantity','type'=>'text','label'=>'Sany'],
+
              // ['name'=>"colors", 'type'=>'table', 'label'=>'Colors','columns'=>['name'=>'Name','code'=>'Code']],
              // ['name'=>"size", 'type'=>'table', 'label'=>'Size','columns'=>['size'=>'Size']]
 
