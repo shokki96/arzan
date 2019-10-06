@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Abonent;
 use App\Models\Order;
 use App\Models\Order_line;
 use App\Models\Product;
@@ -31,7 +32,7 @@ class OrderController extends Controller
             }else
             {
                 $order->phone = $request->get('phone');
-                User::firstOrCreate(['phone'=>$order->phone],['password'=>bcrypt($order->phone)]);
+                Abonent::firstOrCreate(['phone'=>$order->phone],['password'=>bcrypt($order->phone)]);
             }
 
             $order->total_price = 0;
