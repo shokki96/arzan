@@ -31,7 +31,7 @@ class OrderController extends Controller
             }else
             {
                 $order->phone = $request->get('phone');
-                User::findOrCreate(['phone'=>$order->phone],['password'=>bcrypt($order->phone)]);
+                User::firstOrCreate(['phone'=>$order->phone],['password'=>bcrypt($order->phone)]);
             }
 
             $order->total_price = 0;
