@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a9dba85-f6e1-480b-8783-5d68294e9507" name="Default Changelist" comment="product quantity attribute">
+    <list default="true" id="4a9dba85-f6e1-480b-8783-5d68294e9507" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductCrudController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ProductCrudController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="326">
@@ -105,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Models/Product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="115" column="48" lean-forward="true" selection-start-line="115" selection-start-column="48" selection-end-line="115" selection-end-column="48" />
+            <state relative-caret-position="356">
+              <caret line="113" column="26" selection-start-line="113" selection-start-column="26" selection-end-line="113" selection-end-column="26" />
               <folding>
                 <element signature="e#2853#4419#0#PHP" />
               </folding>
@@ -163,8 +162,8 @@
         <option value="$PROJECT_DIR$/app/Models/Order.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/OrderCrudController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" />
-        <option value="$PROJECT_DIR$/app/Models/Product.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductCrudController.php" />
+        <option value="$PROJECT_DIR$/app/Models/Product.php" />
       </list>
     </option>
   </component>
@@ -377,21 +376,7 @@
       <workItem from="1566287876916" duration="4893000" />
       <workItem from="1570277768561" duration="7504000" />
       <workItem from="1570359041128" duration="4362000" />
-      <workItem from="1571566937666" duration="11281000" />
-    </task>
-    <task id="LOCAL-00020" summary="orders now can create withaout auth">
-      <created>1565613043979</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1565613043979</updated>
-    </task>
-    <task id="LOCAL-00021" summary="orders now can create withaout auth with bug fix">
-      <created>1565613361963</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1565613361963</updated>
+      <workItem from="1571566937666" duration="11646000" />
     </task>
     <task id="LOCAL-00022" summary="customers bug fix">
       <created>1566069697972</created>
@@ -722,11 +707,25 @@
       <option name="project" value="LOCAL" />
       <updated>1571577933547</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="product quantity attribute">
+      <created>1571578243276</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1571578243276</updated>
+    </task>
+    <task id="LOCAL-00070" summary="product quantity attribute">
+      <created>1571578362978</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1571578362978</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74171000" />
+    <option name="totallyTimeSpent" value="74536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1294" height="696" extended-state="6" />
@@ -763,7 +762,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/arzan" />
     </ignored-roots>
-    <MESSAGE value="order detailrow bug fix2" />
     <MESSAGE value="email nullable" />
     <MESSAGE value="apiuser" />
     <MESSAGE value="image uploads fix" />
@@ -788,7 +786,8 @@
     <MESSAGE value="order crud date format fix" />
     <MESSAGE value="complete order funksia" />
     <MESSAGE value="product paginate 12" />
-    <option name="LAST_COMMIT_MESSAGE" value="product paginate 12" />
+    <MESSAGE value="product quantity attribute" />
+    <option name="LAST_COMMIT_MESSAGE" value="product quantity attribute" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_12_115855_change_abonent_id_on_orders_table.php" />
@@ -1072,13 +1071,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Product.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ProductCrudController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="115" column="48" lean-forward="true" selection-start-line="115" selection-start-column="48" selection-end-line="115" selection-end-column="48" />
-          <folding>
-            <element signature="e#2853#4419#0#PHP" />
-          </folding>
+        <state relative-caret-position="326">
+          <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -1089,10 +1085,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ProductCrudController.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
+        <state relative-caret-position="356">
+          <caret line="113" column="26" selection-start-line="113" selection-start-column="26" selection-end-line="113" selection-end-column="26" />
+          <folding>
+            <element signature="e#2853#4419#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
