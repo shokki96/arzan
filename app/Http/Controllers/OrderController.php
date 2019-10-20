@@ -51,9 +51,9 @@ class OrderController extends Controller
 
                 $product = Product::find($orderLine->product_id);
 //                $product->quantity -= $orderLine->quantity;
-                $product_size =json_decode($product->size,true);
-                $product_size['quantity'] -= $orderLine->quantity;
-                $product->size = json_encode($product_size);
+//                $product_size =json_decode($product->size,true);
+//                $product_size['quantity'] -= $orderLine->quantity;
+//                $product->size = json_encode($product_size);
                 $product->save();
                 $order->total_price += $orderLine->total_cost;
             }

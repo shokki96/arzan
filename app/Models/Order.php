@@ -61,4 +61,7 @@ class Order extends Model
     | MUTATORS
     |--------------------------------------------------------------------------
     */
+    public function complete(){
+        throw new \Exception('method not allowed');
+    }
 }

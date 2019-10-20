@@ -61,6 +61,7 @@ class OrderCrudController extends CrudController
         // add asterisk for fields that are required in OrderRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
         $this->crud->setRequiredFields(UpdateRequest::class, 'edit');
+        $this->crud->addButton('line', 'sell', 'model_function', 'complete', 'beginning');
     }
 
     public function store(StoreRequest $request)
