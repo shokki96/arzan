@@ -27,7 +27,7 @@ class ProductController extends Controller
         }
         //        todo sorting???
         return $query->orderBy('created_at','DESC')
-            ->paginate(6);
+            ->paginate(12);
     }
 
 
