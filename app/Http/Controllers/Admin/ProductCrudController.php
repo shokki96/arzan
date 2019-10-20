@@ -40,7 +40,7 @@ class ProductCrudController extends CrudController
         //$this->crud->setFromDb();\
         
          $this->crud->addColumns([
-             ['name'=>'thumbnail','label'=>'Suraty', 'type' => 'image'],
+             ['name'=>'thumbnail','label'=>'Suraty', 'type' => 'image','prefix'=>'uploads/'],
              ['name'=>'title','type'=>'text','label'=>'Ady'],
              ['name'=>'description','type'=>'text','label'=>'Düşüdiriliş'],
              ['name'=>'phone','label'=>'Telefon','type' => 'text'],
@@ -75,7 +75,7 @@ class ProductCrudController extends CrudController
             'upload' => true, 'disk' => 'uploads', 'tab' => 'Hokman Doldurulmaly'],
 
             ['name'=>'phone','label'=>'Telefon','type' => 'number', 'tab' => 'Beylekiler'],
-            ['name'=>'price','label'=>'Bahasy','type' => 'decimal', 'tab' => 'Hokman Doldurulmaly',
+            ['name'=>'price','label'=>'Bahasy','type' => 'number', 'tab' => 'Hokman Doldurulmaly',
             'attributes' => ["step" => "any"], 'suffix' => "man.",],
             ['name'=>'categoryP','attribute'=>'name_tm','type'=>'select','label'=>'Esasy Kategoriýa ',
                 'entity'=>'category', 'model'=>'App\Models\Category',
