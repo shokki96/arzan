@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\Order;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 
 // VALIDATION: change the requests to match your own file names if you need form validation
@@ -93,6 +94,7 @@ class OrderCrudController extends CrudController
     }
 
     public function complete($id){
-        dd($this->data);
+        $order = Order::findOrFail($id);
+        dd($order);
     }
 }
