@@ -113,6 +113,7 @@ class OrderCrudController extends CrudController
                 DB::rollBack();
                 Alert::error('Zakaz edilen möçber skladda ýeterlik ýok, ýada harydyň möçber girizilmedik');
                 return redirect()->back();
+                break;
             }
 
         }
