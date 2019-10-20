@@ -97,7 +97,8 @@ class OrderCrudController extends CrudController
 
     public function complete($id){
         $order = Order::with('lines')->findOrFail($id);
-
+        Alert::error('Zakaz edilen möçber skladda ýeterlik ýok, ýada harydyň möçber girizilmedik')->flash();
+        return redirect()->back();
         DB::beginTransaction();
         foreach ($order->lines as $line){
             $product = $line->product;
