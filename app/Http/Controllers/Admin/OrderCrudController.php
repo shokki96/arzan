@@ -101,17 +101,17 @@ class OrderCrudController extends CrudController
         DB::beginTransaction();
         foreach ($order->lines as $line){
             $product = $line->product;
-            $product_size = json_decode($product->size);
+            $product_size = json_decode($product->size,true);
             $key = array_search($line->size, $product_size);
-            dd($product_size);
-            if($product_size[$key]['quantity']>= $line->quantity){
+//            dd($product_size);
+            if(isset($product_size[$key]['quantity']) && $product_size[$key]['quantity']>= $line->quantity){
                 $product_size[$key]['quantity'] -=$line->quantity;
                 $product->size = json_encode($product_size);
                 $product->save();
             }
             else{
                 DB::rollBack();
-                Alert::error('Zakaz edilen möçber skladda ýeterlik ýok')->flash();
+                Alert::error('Zakaz edilen möçber skladda ýeterlik ýok, ýada harydyň möçber girizilmedik')->flash();
                 return redirect()->back();
             }
 
