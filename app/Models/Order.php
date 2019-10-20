@@ -62,6 +62,6 @@ class Order extends Model
     |--------------------------------------------------------------------------
     */
     public function complete_button($crud = false){
-        return '<a class="btn btn-xs btn-default" href="'.url($crud->route.'/'.$this->id.'/moderate').'" data-toggle="tooltip" title="Complete order."><i class="fa fa-comment"></i> Sat</a>';
+        return '<a class="btn btn-xs btn-default" href="'.url($crud->route.'/'.$this->id.'/complete').'" data-toggle="tooltip" title="Complete order."><i class="fa fa-handshake-o"></i> Sat</a>';
     }
 }
