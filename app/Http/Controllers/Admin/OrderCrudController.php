@@ -103,6 +103,7 @@ class OrderCrudController extends CrudController
             $product = $line->product;
             $product_size = json_decode($product->size);
             $key = array_search($line->size, $product_size);
+            dd($product_size);
             if($product_size[$key]['quantity']>= $line->quantity){
                 $product_size[$key]['quantity'] -=$line->quantity;
                 $product->size = json_encode($product_size);
