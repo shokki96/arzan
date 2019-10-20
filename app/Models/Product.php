@@ -111,8 +111,9 @@ public static function boot()
     public function getQuantityAttribute(){
         $product_size = json_decode($this->size, true);
         $quantity = 0;
+
         foreach ($product_size as $item){
-            $quantity += $item['quantity'];
+            $quantity += $item['quantity'] ?? 0;
         }
         return $quantity;
     }
