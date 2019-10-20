@@ -108,7 +108,7 @@ public static function boot()
         return $this->images[0] ?? "no_image.jpg";
     }
 
-    public function getQuantityAttribute(){
+    public function getSanyAttribute(){
         $product_size = json_decode($this->size, true);
         $quantity = 0;
         dd($product_size);
