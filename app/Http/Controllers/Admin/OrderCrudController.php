@@ -93,6 +93,6 @@ class OrderCrudController extends CrudController
     }
 
     public function complete($id){
-        dd($this->data['entry']);
+        dd($this->data);
     }
 }
