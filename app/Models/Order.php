@@ -61,7 +61,7 @@ class Order extends Model
     | MUTATORS
     |--------------------------------------------------------------------------
     */
-    public function complete(){
-        throw new \Exception('method not allowed');
+    public function complete_button($crud = false){
+        return '<a class="btn btn-xs btn-default" href="'.url($crud->route.'/'.$this->id.'/moderate').'" data-toggle="tooltip" title="Complete order."><i class="fa fa-comment"></i> Sat</a>';
     }
 }

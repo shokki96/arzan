@@ -4,8 +4,8 @@
     <list default="true" id="4a9dba85-f6e1-480b-8783-5d68294e9507" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/OrderCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/OrderCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/backpack/custom.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/backpack/custom.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,20 +48,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/OrderCrudController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="63" column="87" selection-start-line="63" selection-start-column="87" selection-end-line="63" selection-end-column="87" />
+            <state relative-caret-position="374">
+              <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/backpack/custom.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/Order.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="64" column="51" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+            <state relative-caret-position="371">
+              <caret line="63" column="35" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="35" />
               <folding>
                 <element signature="e#30#43#0#PHP" expanded="true" />
               </folding>
@@ -140,7 +149,6 @@
         <option value="$PROJECT_DIR$/app/Models/Slider.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/SliderCrudController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AbonentCrudController.php" />
-        <option value="$PROJECT_DIR$/routes/backpack/custom.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" />
         <option value="$PROJECT_DIR$/.env" />
@@ -152,8 +160,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductCrudController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/OrderCrudController.php" />
+        <option value="$PROJECT_DIR$/routes/backpack/custom.php" />
         <option value="$PROJECT_DIR$/app/Models/Order.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/OrderCrudController.php" />
       </list>
     </option>
   </component>
@@ -295,18 +304,12 @@
             <path>
               <item name="arzan" type="b2602c69:ProjectViewProjectNode" />
               <item name="arzan" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="arzan" type="b2602c69:ProjectViewProjectNode" />
               <item name="arzan" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="arzan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="arzan" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
               <item name="backpack" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -377,14 +380,7 @@
       <workItem from="1566287876916" duration="4893000" />
       <workItem from="1570277768561" duration="7504000" />
       <workItem from="1570359041128" duration="4362000" />
-      <workItem from="1571566937666" duration="5473000" />
-    </task>
-    <task id="LOCAL-00004" summary="permission and statistika bugfix">
-      <created>1564863068729</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1564863068730</updated>
+      <workItem from="1571566937666" duration="6720000" />
     </task>
     <task id="LOCAL-00005" summary="permission and statistika bugfix2">
       <created>1564863338210</created>
@@ -722,11 +718,18 @@
       <option name="project" value="LOCAL" />
       <updated>1571571470788</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="complete order funksia">
+      <created>1571572460351</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1571572460351</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68363000" />
+    <option name="totallyTimeSpent" value="69610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1294" height="696" extended-state="6" />
@@ -763,7 +766,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/arzan" />
     </ignored-roots>
-    <MESSAGE value="customers bug fix" />
     <MESSAGE value="order detailrow bug fix" />
     <MESSAGE value="order detailrow bug fix2" />
     <MESSAGE value="email nullable" />
@@ -788,7 +790,8 @@
     <MESSAGE value="product crud image size" />
     <MESSAGE value="order crud add date column" />
     <MESSAGE value="order crud date format fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="order crud date format fix" />
+    <MESSAGE value="complete order funksia" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete order funksia" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_12_115855_change_abonent_id_on_orders_table.php" />
@@ -864,13 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
           <caret line="68" column="59" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/backpack/custom.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="83" selection-start-line="25" selection-start-column="83" selection-end-line="25" selection-end-column="83" />
         </state>
       </provider>
     </entry>
@@ -1076,20 +1072,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/OrderCrudController.php">
+    <entry file="file://$PROJECT_DIR$/routes/backpack/custom.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="63" column="87" selection-start-line="63" selection-start-column="87" selection-end-line="63" selection-end-column="87" />
+        <state relative-caret-position="391">
+          <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Order.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="64" column="51" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+        <state relative-caret-position="371">
+          <caret line="63" column="35" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="35" />
           <folding>
             <element signature="e#30#43#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/OrderCrudController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
         </state>
       </provider>
     </entry>

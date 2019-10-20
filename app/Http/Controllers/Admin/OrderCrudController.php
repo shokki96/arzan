@@ -61,7 +61,7 @@ class OrderCrudController extends CrudController
         // add asterisk for fields that are required in OrderRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
         $this->crud->setRequiredFields(UpdateRequest::class, 'edit');
-        $this->crud->addButton('line', 'sell', 'model_function', 'complete', 'beginning');
+        $this->crud->addButtonFromModelFunction('line', 'sell', 'complete_button', 'beginning');
     }
 
     public function store(StoreRequest $request)
@@ -90,5 +90,9 @@ class OrderCrudController extends CrudController
 
         // load the view from /resources/views/vendor/backpack/crud/ if it exists, otherwise load the one in the package
         return view('crud::details_row', $this->data);
+    }
+
+    public function complete($id){
+        dd($this->entry);
     }
 }
