@@ -40,7 +40,9 @@ class ProductCrudController extends CrudController
         //$this->crud->setFromDb();\
         
          $this->crud->addColumns([
-             ['name'=>'thumbnail','label'=>'Suraty', 'type' => 'image','prefix'=>'uploads/'],
+             ['name'=>'thumbnail','label'=>'Suraty', 'type' => 'image','prefix'=>'uploads/',
+                  'height' => '30px',
+                  'width' => '30px',],
              ['name'=>'title','type'=>'text','label'=>'Ady'],
              ['name'=>'description','type'=>'text','label'=>'Düşüdiriliş'],
              ['name'=>'phone','label'=>'Telefon','type' => 'text'],
