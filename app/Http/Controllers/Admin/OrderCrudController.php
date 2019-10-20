@@ -9,6 +9,8 @@ use Backpack\CRUD\app\Http\Controllers\CrudController;
 use App\Http\Requests\OrderRequest as StoreRequest;
 use App\Http\Requests\OrderRequest as UpdateRequest;
 use Backpack\CRUD\CrudPanel;
+use Illuminate\Support\Facades\DB;
+use Prologue\Alerts\Facades\Alert;
 
 /**
  * Class OrderCrudController
@@ -94,7 +96,29 @@ class OrderCrudController extends CrudController
     }
 
     public function complete($id){
-        $order = Order::findOrFail($id);
-        dd($order);
+        $order = Order::with('lines')->findOrFail($id);
+
+        DB::beginTransaction();
+        foreach ($order->lines as $line){
+            $product = $line->product;
+            $product_size = json_decode($product->size);
+            $key = array_search($line->size, $product_size);
+            if($product_size[$key]['quantity']>= $line->quantity){
+                $product_size[$key]['quantity'] -=$line->quantity;
+                $product->size = json_encode($product_size);
+                $product->save();
+            }
+            else{
+                DB::rollBack();
+                Alert::error('Zakaz edilen möçber skladda ýeterlik ýok')->flash();
+                return redirect()->back();
+            }
+
+        }
+        $order->status ='completed';
+        $order->save();
+        DB::commit();
+        Alert::success('Zakaz satyldy')->flash();
+        return redirect()->back();
     }
 }

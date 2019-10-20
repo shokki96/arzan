@@ -39,7 +39,7 @@ class Order extends Model
         return $this->belongsTo(Abonent::class,'abonent_id');
     }
     public function lines(){
-        return $this->hasMany(Order_line::class);
+        return $this->hasMany(Order_line::class)->with('product');
     }
     public function delivermen(){
         return $this->belongsTo(Delivermen::class,'delivermen');
