@@ -4,8 +4,6 @@
     <list default="true" id="4a9dba85-f6e1-480b-8783-5d68294e9507" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/OrderCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/OrderCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/backpack/custom.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/backpack/custom.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/OrderCrudController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+            <state relative-caret-position="337">
+              <caret line="95" column="32" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -69,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/Order.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="63" column="35" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="35" />
+            <state relative-caret-position="388">
+              <caret line="64" column="178" selection-start-line="64" selection-start-column="178" selection-end-line="64" selection-end-column="178" />
               <folding>
                 <element signature="e#30#43#0#PHP" expanded="true" />
               </folding>
@@ -380,21 +378,7 @@
       <workItem from="1566287876916" duration="4893000" />
       <workItem from="1570277768561" duration="7504000" />
       <workItem from="1570359041128" duration="4362000" />
-      <workItem from="1571566937666" duration="6720000" />
-    </task>
-    <task id="LOCAL-00005" summary="permission and statistika bugfix2">
-      <created>1564863338210</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1564863338210</updated>
-    </task>
-    <task id="LOCAL-00006" summary="permission role">
-      <created>1564864501445</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1564864501445</updated>
+      <workItem from="1571566937666" duration="7173000" />
     </task>
     <task id="LOCAL-00007" summary="permission role categor bug fix">
       <created>1564864951969</created>
@@ -725,11 +709,25 @@
       <option name="project" value="LOCAL" />
       <updated>1571572460351</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="complete order funksia">
+      <created>1571573685209</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1571573685209</updated>
+    </task>
+    <task id="LOCAL-00055" summary="complete order funksia">
+      <created>1571574054363</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1571574054363</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69610000" />
+    <option name="totallyTimeSpent" value="70063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1294" height="696" extended-state="6" />
@@ -1081,8 +1079,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Order.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="63" column="35" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="35" />
+        <state relative-caret-position="388">
+          <caret line="64" column="178" selection-start-line="64" selection-start-column="178" selection-end-line="64" selection-end-column="178" />
           <folding>
             <element signature="e#30#43#0#PHP" expanded="true" />
           </folding>
@@ -1091,8 +1089,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/OrderCrudController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+        <state relative-caret-position="337">
+          <caret line="95" column="32" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="32" />
         </state>
       </provider>
     </entry>
