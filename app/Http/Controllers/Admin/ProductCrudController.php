@@ -47,7 +47,7 @@ class ProductCrudController extends CrudController
              ['name'=>'description','type'=>'text','label'=>'Düşüdiriliş'],
              ['name'=>'phone','label'=>'Telefon','type' => 'text'],
              ['name'=>'price','label'=>'Baha','type' => 'number'],
-             ['name'=>'quantity','type'=>'text','label'=>'Sany'],
+             ['name'=>'quantity','type'=>'number','label'=>'Sany'],
              ['label'=>'Esasy kategoriýa', 'type'=>'select', 'name'=>'categoryP', 'entity'=>'category',
                 'model'=>'App\Models\Category','attribute' => 'name_tm', 'searchLogic' => false],
              ['name'=>'categoryC','type'=>'select','label'=>'Kiçi kategoriýa', 'entity'=>'subCategory',

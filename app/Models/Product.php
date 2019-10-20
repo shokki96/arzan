@@ -108,6 +108,15 @@ public static function boot()
         return $this->images[0] ?? "no_image.jpg";
     }
 
+    public function getQuantityAttribute(){
+        $product_size = json_encode($this->size, true);
+        $quantity = 0;
+        foreach ($product_size as $item){
+            $quantity += $item['quantity'];
+        }
+        return $quantity;
+    }
+
     public function uploadMultipleFilesToDisk($value, $attribute_name, $disk, $destination_path)
     {
         $request = \Request::instance();
