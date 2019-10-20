@@ -40,16 +40,17 @@ class ProductCrudController extends CrudController
         //$this->crud->setFromDb();\
         
          $this->crud->addColumns([
-            ['name'=>'title','type'=>'text','label'=>'Ady'],
-            ['name'=>'description','type'=>'text','label'=>'Düşüdiriliş'],
-            ['name'=>'phone','label'=>'Telefon','type' => 'text'],
-            ['name'=>'price','label'=>'Baha','type' => 'number'],
-            ['name'=>'quantity','type'=>'text','label'=>'Sany'],
-            ['label'=>'Esasy kategoriýa', 'type'=>'select', 'name'=>'categoryP', 'entity'=>'category',
+             ['name'=>'thumbnail','label'=>'Suraty', 'type' => 'image'],
+             ['name'=>'title','type'=>'text','label'=>'Ady'],
+             ['name'=>'description','type'=>'text','label'=>'Düşüdiriliş'],
+             ['name'=>'phone','label'=>'Telefon','type' => 'text'],
+             ['name'=>'price','label'=>'Baha','type' => 'number'],
+             ['name'=>'quantity','type'=>'text','label'=>'Sany'],
+             ['label'=>'Esasy kategoriýa', 'type'=>'select', 'name'=>'categoryP', 'entity'=>'category',
                 'model'=>'App\Models\Category','attribute' => 'name_tm', 'searchLogic' => false],
-            ['name'=>'categoryC','type'=>'select','label'=>'Kiçi kategoriýa', 'entity'=>'subCategory',
+             ['name'=>'categoryC','type'=>'select','label'=>'Kiçi kategoriýa', 'entity'=>'subCategory',
                 'model'=>'App\Models\Category', 'attribute' => 'name_tm','searchLogic' => false],
-            ['name'=>'locationP','type'=>'select','label'=>'Ýeri', 'entity'=>'location',
+             ['name'=>'locationP','type'=>'select','label'=>'Ýeri', 'entity'=>'location',
                 'model'=>'App\Models\Location','attribute' => 'name_tm', 'searchLogic' => false],
 
 
@@ -62,7 +63,7 @@ class ProductCrudController extends CrudController
             ['name'=>'title_ru','type'=>'text','label'=>'Ru Ady', 'tab' => 'Rus Dili'],
             ['name'=>'title_en','type'=>'text','label'=>'En Ady', 'tab' => 'Inlis Dili'],
 
-            ['name'=>'quantity','type'=>'number','label'=>'Sany', 'tab' => 'Hokman Doldurulmaly'],
+//            ['name'=>'quantity','type'=>'number','label'=>'Sany', 'tab' => 'Hokman Doldurulmaly'],
             ['name'=>'description','type'=>'text','label'=>'Düşüdirilişi', 'tab' => 'Hokman Doldurulmaly'],
             ['name'=>'quantity_attribute','type'=>'text','label'=>'Ölçeg birligi Tm', 'default' => 'Sany', 'tab' => 'Hokman Doldurulmaly'],
             ['name'=>'description_ru','type'=>'text','label'=>'Ru Düşüdirilişi', 'tab' => 'Rus Dili'],
@@ -74,7 +75,8 @@ class ProductCrudController extends CrudController
             'upload' => true, 'disk' => 'uploads', 'tab' => 'Hokman Doldurulmaly'],
 
             ['name'=>'phone','label'=>'Telefon','type' => 'number', 'tab' => 'Beylekiler'],
-            ['name'=>'price','label'=>'Bahasy','type' => 'number', 'tab' => 'Hokman Doldurulmaly'],
+            ['name'=>'price','label'=>'Bahasy','type' => 'decimal', 'tab' => 'Hokman Doldurulmaly',
+            'attributes' => ["step" => "any"], 'suffix' => "man.",],
             ['name'=>'categoryP','attribute'=>'name_tm','type'=>'select','label'=>'Esasy Kategoriýa ',
                 'entity'=>'category', 'model'=>'App\Models\Category',
                 'options'=>(function ($query) {
@@ -89,7 +91,7 @@ class ProductCrudController extends CrudController
                 }), 'tab' => 'Hokman Doldurulmaly'
             ],
             ['name'=>"colors", 'type'=>'table','entity_singular' => 'option', 'label'=>'Reňkler','columns'=>['name'=>'Name','code'=>'Code'], 'tab' => 'Beylekiler'],
-            ['name'=>"size", 'type'=>'table', 'entity_singular' => 'option','label'=>'Razmerler','columns'=>['size'=>'Size'], 'tab' => 'Beylekiler']
+            ['name'=>"size", 'type'=>'table', 'entity_singular' => 'option','label'=>'Razmerler','columns'=>['size'=>'Size','quantity'=>'Quantity'], 'tab' => 'Beylekiler']
              ]);
 
         // add asterisk for fields that are required in ProductRequest

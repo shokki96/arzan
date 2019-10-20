@@ -104,7 +104,11 @@ public static function boot()
     |--------------------------------------------------------------------------
     */
 
-  public function uploadMultipleFilesToDisk($value, $attribute_name, $disk, $destination_path)
+    public function getThumbnailAttribute(){
+        return $this->images[0] ?? "no_image.jpg";
+    }
+
+    public function uploadMultipleFilesToDisk($value, $attribute_name, $disk, $destination_path)
     {
         $request = \Request::instance();
         $attribute_value = (array) $this->{$attribute_name};
@@ -137,8 +141,7 @@ public static function boot()
         $this->attributes[$attribute_name] = json_encode($attribute_value);
     }
 
-
-public function setImagesAttribute($value)
+    public function setImagesAttribute($value)
     {
         $attribute_name = "images";
         $disk = "uploads";

@@ -13,7 +13,11 @@
         <tbody>
         @foreach($entry->lines as $line)
             <tr>
-                <td><img src="{{asset('uploads/'.$line->product->images[0])}}" class="img-thumbnail img-lg"></td>
+                <td><a href="{{asset('uploads/'.$line->product->thumbnail)}}" target="_blank">
+                        <img src="{{asset('uploads/'.$line->product->thumbnail)}}" class="img-thumbnail img-lg">
+                    </a>
+                </td>
+
                 <td>{{$line->product->title}}</td>
                 <td>{{$line->quantity}}</td>
                 <td>{{$line->total_cost}}</td>

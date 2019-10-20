@@ -39,37 +39,6 @@ class ProductController extends Controller
         ])->find($id);
     }
 
-    public function store(ProductRequest $request){
 
-        try{
-            Product::create([
 
-                'title' => $request['title'],
-                'description' => $request['description'],
-                'abonent_id' => auth()->id(),
-                'price' => $request['price'],
-                'locationP' => $request['locationP'],
-//                'locationC' => $request['locationC'],
-                'phone' => auth()->user()->phone,
-                'email' => auth()->user()->email,
-                'categoryP' => $request['categoryP'],
-                'categoryC' => $request['categoryC']
-            ]);
-            return response()->json(['message' => 'Successfully saved']);
-        }catch (\Exception $ex){
-            return response()->json(['error' => 'Failed']);
-        }
-
-    }
-
-    public function update(ProductRequest $request){
-
-    }
-
-    public function delete($id){
-        $announce = Product::find($id);
-        if($announce && $announce->abonent_id == auth()->id()){
-            $announce->delete();
-        }
-    }
 }
