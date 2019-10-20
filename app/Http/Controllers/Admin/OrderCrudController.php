@@ -111,7 +111,7 @@ class OrderCrudController extends CrudController
             }
             else{
                 DB::rollBack();
-                Alert::error('Zakaz edilen möçber skladda ýeterlik ýok, ýada harydyň möçber girizilmedik')->flash();
+                Alert::error('Zakaz edilen möçber skladda ýeterlik ýok, ýada harydyň möçber girizilmedik');
                 return redirect()->back();
             }
 

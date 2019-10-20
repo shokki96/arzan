@@ -49,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/OrderCrudController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="105" column="30" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
+            <state relative-caret-position="283">
+              <caret line="113" column="106" selection-start-line="113" selection-start-column="106" selection-end-line="113" selection-end-column="106" />
               <folding>
                 <element signature="e#46#67#0#PHP" expanded="true" />
               </folding>
@@ -381,21 +381,7 @@
       <workItem from="1566287876916" duration="4893000" />
       <workItem from="1570277768561" duration="7504000" />
       <workItem from="1570359041128" duration="4362000" />
-      <workItem from="1571566937666" duration="8782000" />
-    </task>
-    <task id="LOCAL-00011" summary="permissionssss234">
-      <created>1564867412017</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1564867412017</updated>
-    </task>
-    <task id="LOCAL-00012" summary="permissionssss234">
-      <created>1564867577603</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1564867577603</updated>
+      <workItem from="1571566937666" duration="9320000" />
     </task>
     <task id="LOCAL-00013" summary="permissionssss2345">
       <created>1564867925609</created>
@@ -726,11 +712,25 @@
       <option name="project" value="LOCAL" />
       <updated>1571575575041</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="complete order funksia">
+      <created>1571575745588</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1571575745588</updated>
+    </task>
+    <task id="LOCAL-00061" summary="complete order funksia">
+      <created>1571576011253</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1571576011253</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71672000" />
+    <option name="totallyTimeSpent" value="72210000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1294" height="696" extended-state="6" />
@@ -1092,8 +1092,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/OrderCrudController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="105" column="30" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
+        <state relative-caret-position="283">
+          <caret line="113" column="106" selection-start-line="113" selection-start-column="106" selection-end-line="113" selection-end-column="106" />
           <folding>
             <element signature="e#46#67#0#PHP" expanded="true" />
           </folding>
