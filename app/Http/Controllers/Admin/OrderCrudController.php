@@ -36,7 +36,7 @@ class OrderCrudController extends CrudController
             ['name'=>'phone','label'=>'Musderi nomeri', 'type'=>'text'],
             ['name'=>'total_price', 'label'=>'Jemi bahasy', 'type'=>'number', 'decimals' => 2],
             ['name'=>'status','type'=>'text','label'=>'Sargyt statusy'],
-            ['name'=>'created_at', 'type'=>'datetime','label'=>'Wagty', 'format'=>'l j F Y H:i:s']
+            ['name'=>'created_at', 'type'=>'datetime','label'=>'Wagty', 'format'=>'d-m-Y H:i']
 
         ]);
 
