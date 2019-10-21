@@ -109,9 +109,9 @@ public static function boot()
     }
 
     public function getSanyAttribute(){
+        dd($this->size);
         $product_size = json_decode($this->size, true);
         $quantity = 0;
-        dd($product_size);
         foreach ($product_size as $item){
             if(isset($item['quantity']))
                 $quantity += $item['quantity'];
