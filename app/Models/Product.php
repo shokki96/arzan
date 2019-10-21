@@ -109,10 +109,10 @@ public static function boot()
     }
 
     public function getSanyAttribute(){
-        return 0;
 
-        dd($this->size);
         $product_size = json_decode($this->size, true);
+        //dd($this->size);
+        return 0;
         $quantity = 0;
         foreach ($product_size as $item){
             if(isset($item['quantity']))

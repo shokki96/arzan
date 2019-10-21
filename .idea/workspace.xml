@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a9dba85-f6e1-480b-8783-5d68294e9507" name="Default Changelist" comment="product quantity attribute">
+    <list default="true" id="4a9dba85-f6e1-480b-8783-5d68294e9507" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
     </list>
@@ -105,8 +105,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Models/Product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+            <state relative-caret-position="187">
+              <caret line="114" column="16" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -372,21 +372,7 @@
       <workItem from="1570277768561" duration="7504000" />
       <workItem from="1570359041128" duration="4362000" />
       <workItem from="1571566937666" duration="12560000" />
-      <workItem from="1571635879426" duration="251000" />
-    </task>
-    <task id="LOCAL-00024" summary="order detailrow bug fix2">
-      <created>1566073603764</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1566073603764</updated>
-    </task>
-    <task id="LOCAL-00025" summary="email nullable">
-      <created>1566074475107</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1566074475107</updated>
+      <workItem from="1571635879426" duration="378000" />
     </task>
     <task id="LOCAL-00026" summary="apiuser">
       <created>1566075618009</created>
@@ -717,11 +703,25 @@
       <option name="project" value="LOCAL" />
       <updated>1571578909766</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="product quantity attribute">
+      <created>1571636145375</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1571636145375</updated>
+    </task>
+    <task id="LOCAL-00074" summary="product quantity attribute">
+      <created>1571636196667</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1571636196667</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75701000" />
+    <option name="totallyTimeSpent" value="75828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
@@ -1081,8 +1081,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+        <state relative-caret-position="187">
+          <caret line="114" column="16" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
         </state>
       </provider>
     </entry>
