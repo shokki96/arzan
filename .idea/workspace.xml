@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a9dba85-f6e1-480b-8783-5d68294e9507" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,8 +105,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Models/Product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="121" column="13" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
+            <state relative-caret-position="357">
+              <caret line="118" column="46" selection-start-line="118" selection-start-column="46" selection-end-line="118" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -371,28 +372,7 @@
       <workItem from="1570277768561" duration="7504000" />
       <workItem from="1570359041128" duration="4362000" />
       <workItem from="1571566937666" duration="12560000" />
-      <workItem from="1571635879426" duration="978000" />
-    </task>
-    <task id="LOCAL-00029" summary="statistikst test">
-      <created>1566288495471</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1566288495471</updated>
-    </task>
-    <task id="LOCAL-00030" summary="statistikst test fx">
-      <created>1566288641684</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1566288641684</updated>
-    </task>
-    <task id="LOCAL-00031" summary="statistikst test fx2">
-      <created>1566288798669</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1566288798669</updated>
+      <workItem from="1571635879426" duration="1331000" />
     </task>
     <task id="LOCAL-00032" summary="statistikst test fx2">
       <created>1566288937733</created>
@@ -716,11 +696,32 @@
       <option name="project" value="LOCAL" />
       <updated>1571636714092</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="product quantity attribute">
+      <created>1571636867202</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1571636867202</updated>
+    </task>
+    <task id="LOCAL-00079" summary="product quantity attribute">
+      <created>1571637031673</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1571637031673</updated>
+    </task>
+    <task id="LOCAL-00080" summary="product quantity attribute">
+      <created>1571637108774</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1571637108774</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76428000" />
+    <option name="totallyTimeSpent" value="76781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
@@ -1080,8 +1081,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="121" column="13" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
+        <state relative-caret-position="357">
+          <caret line="118" column="46" selection-start-line="118" selection-start-column="46" selection-end-line="118" selection-end-column="46" />
         </state>
       </provider>
     </entry>
