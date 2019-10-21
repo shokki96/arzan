@@ -116,7 +116,7 @@ public static function boot()
         $quantity = 0;
         if(isset($product_size))
             foreach ($product_size as $item){
-                $quantity += $item['quantity'];
+                $quantity += $item['quantity'] ?? 0;
 
             }
         return $quantity;
