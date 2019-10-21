@@ -112,9 +112,10 @@ public static function boot()
 
         $product_size = json_decode($this->size, true);
         //dd($this->size);
-        return $product_size[0]['size'] ?? 123;
+//        return $product_size[0]['size'] ?? 123;
         $quantity = 0;
         foreach ($product_size as $item){
+            return $quantity;
             if(isset($item['quantity']))
                 $quantity += $item['quantity'];
         }
