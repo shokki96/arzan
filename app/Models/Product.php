@@ -114,7 +114,7 @@ public static function boot()
         //dd($this->size);
 //        return $product_size[0]['size'] ?? 123;
         $quantity = 0;
-        if(count($product_size)>0)
+        if(isset($product_size))
             foreach ($product_size as $item){
                 return $quantity;
                 if(isset($item['quantity']))
