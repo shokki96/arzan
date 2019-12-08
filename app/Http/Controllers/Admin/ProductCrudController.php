@@ -105,7 +105,7 @@ class ProductCrudController extends CrudController
     public function store(StoreRequest $request)
     {
         // your additional operations before save here
-        dd($request);
+        $this->size_validation();
         $redirect_location = parent::storeCrud($request);
         // your additional operations after save here
         // use $this->data['entry'] or $this->crud->entry
@@ -117,10 +117,14 @@ class ProductCrudController extends CrudController
     public function update(UpdateRequest $request)
     {
         // your additional operations before save here
-        dd($request);
+        $this->size_validation();
         $redirect_location = parent::updateCrud($request);
         // your additional operations after save here
         // use $this->data['entry'] or $this->crud->entry
         return $redirect_location;
+    }
+
+    public function size_validation(){
+        return true;
     }
 }
