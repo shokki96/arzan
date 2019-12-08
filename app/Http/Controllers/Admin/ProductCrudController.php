@@ -40,6 +40,7 @@ class ProductCrudController extends CrudController
         //$this->crud->setFromDb();\
         
          $this->crud->addColumns([
+             ['name'=>'id','label'=>'No','type'=>'number'],
              ['name'=>'thumbnail','label'=>'Suraty', 'type' => 'image','prefix'=>'uploads/',
                   'height' => '30px',
                   'width' => '30px',],
@@ -53,7 +54,7 @@ class ProductCrudController extends CrudController
              ['name'=>'categoryC','type'=>'select','label'=>'Kiçi kategoriýa', 'entity'=>'subCategory',
                 'model'=>'App\Models\Category', 'attribute' => 'name_tm','searchLogic' => false],
              ['name'=>'locationP','type'=>'select','label'=>'Ýeri', 'entity'=>'location',
-                'model'=>'App\Models\Location','attribute' => 'name_tm', 'searchLogic' => false],
+                'model'=>'App\Models\Location','attribute' => 'name_tm', 'searchLogic' => false]
 
 
              // ['name'=>"colors", 'type'=>'table', 'label'=>'Colors','columns'=>['name'=>'Name','code'=>'Code']],

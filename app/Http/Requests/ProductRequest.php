@@ -31,6 +31,9 @@ class ProductRequest extends FormRequest
             'categoryP' => 'required',
             'categoryC' => 'required',
             'locationP' => 'required',
+            'size' => 'required|array',
+            'size.size'=>'required',
+            'size.quantity'=>'required|numeric',
             'quantity_attribute_en' => 'required',
             'quantity_attribute_ru' => 'required',
             'quantity_attribute' => 'required'
